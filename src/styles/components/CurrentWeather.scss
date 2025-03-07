@@ -1,0 +1,34 @@
+.current-weather {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    margin-bottom: 1rem;
+    color: #333;
+  }
+
+  .weather-info {
+    .temperature {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 0.5rem;
+    }
+
+    .description {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 1rem;
+      text-transform: capitalize;
+    }
+
+    .details {
+      p {
+        color: #666;
+        margin: 0.5rem 0;
+      }
+    }
+  }
+} 

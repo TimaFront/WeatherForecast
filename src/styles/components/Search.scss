@@ -1,0 +1,31 @@
+.search {
+  margin-bottom: 2rem;
+  
+  input {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    
+    &:focus {
+      outline: none;
+      border-color: #3498db;
+      box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+    }
+
+    &::placeholder {
+      color: #999;
+    }
+  }
+}
+
+.error {
+  color: #e74c3c;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: #fdf0ed;
+  border-radius: 8px;
+  border-left: 4px solid #e74c3c;
+} 
