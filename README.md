@@ -1,50 +1,81 @@
-# React + TypeScript + Vite
+# Weather Forecast App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Приложение прогноза погоды с красивым интерфейсом и актуальными данными. Позволяет получать информацию о погоде в любом городе мира.
 
-Currently, two official plugins are available:
+## Основные возможности
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Поиск погоды по названию города
+- Отображение текущей температуры
+- Информация о влажности и скорости ветра
+- Прогноз на ближайшие дни
+- Динамическая смена фона в зависимости от погоды
+- Адаптивный дизайн для всех устройств
 
-## Expanding the ESLint configuration
+## Технологии
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React.js
+- OpenWeather API
+- Axios для API запросов
+- SCSS для стилизации
+- React Icons
 
-- Configure the top-level `parserOptions` property like this:
+## Установка и запуск
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. Клонируйте репозиторий:
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+git clone https://github.com/TimaFront/WeatherForecast.git
 ```
+
+```markdown:README.md
+2. Установите зависимости:
+```
+
+```bash
+cd WeatherForecast && yarn install
+```
+
+```markdown:README.md
+3. Создайте файл `.env` и добавьте ваш API ключ OpenWeather:
+
+```env
+REACT_APP_WEATHER_API_KEY=ваш_api_ключ
+```
+
+4. Запустите приложение:
+```
+
+```bash
+yarn start
+```
+
+```markdown:README.md
+## Использование
+
+1. Введите название города в поисковую строку
+2. Получите актуальную информацию о погоде
+3. Просмотрите прогноз на ближайшие дни
+
+## API
+
+Приложение использует [OpenWeather API](https://openweathermap.org/api) для получения данных о погоде. Для работы необходимо получить API ключ на сайте OpenWeather.
+
+## Структура проекта
+
+```
+src/
+  ├── components/     # React компоненты
+  ├── styles/        # SCSS стили
+  ├── assets/        # Изображения и медиафайлы
+  ├── services/      # API сервисы
+  └── utils/         # Вспомогательные функции
+```
+
+## Автор
+
+[@TimaFront](https://github.com/TimaFront)
+
+## Лицензия
+
+MIT License
